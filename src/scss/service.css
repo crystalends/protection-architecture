@@ -962,6 +962,7 @@ ul li:not(:last-child) {
   padding-bottom: 15px;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.6980392157);
+  z-index: 50;
 }
 
 /*# sourceMappingURL=service.css.map */
