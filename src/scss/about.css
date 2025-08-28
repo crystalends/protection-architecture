@@ -208,7 +208,7 @@ ul li:not(:last-child) {
   align-items: flex-end;
   overflow: hidden;
   min-height: 800px;
-  background: url("./../../public/Rectangle 5.png") no-repeat center;
+  background: url("./../../public/Rectangle 5.webp") no-repeat center;
   background-size: cover;
 }
 .intro--secondary {
@@ -723,7 +723,7 @@ ul li:not(:last-child) {
 }
 
 .why-choose-us {
-  background: url("./../../public/img.png") no-repeat center;
+  background: url("./../../public/img.webp") no-repeat center;
   background-size: cover;
   display: grid;
   padding: 70px 40px;
@@ -913,7 +913,7 @@ ul li:not(:last-child) {
 
 .footer {
   padding: 80px 0;
-  background: url("./../../public/Frame 1171275479.png") no-repeat center;
+  background: url("./../../public/Frame 1171275479.webp") no-repeat center;
   background-size: cover;
 }
 @media (max-width: 720px) {
