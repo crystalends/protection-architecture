@@ -1,0 +1,38 @@
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  @include text-color('dark-gray');
+
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  span {
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    @include border-color('dark-gray');
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    transition: 0.2s;
+
+    svg {
+      opacity: 0;
+    }
+  }
+
+  input:checked + span {
+    @include bg-color('green');
+    @include border-color('green');
+
+    svg {
+      opacity: 1;
+    }
+  }
+}

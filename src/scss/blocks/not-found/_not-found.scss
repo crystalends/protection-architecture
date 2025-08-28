@@ -1,0 +1,41 @@
+.not-found {
+  position: relative;
+  left: 6.5%;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    text-align: center;
+    max-width: 362px;
+  }
+
+  @media (max-width: 1665px) {
+    left: 0;
+    margin: 0 auto;
+
+    &__code {
+      font-size: 220px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__code {
+      font-size: 160px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__code {
+      font-size: 120px;
+    }
+    &__content {
+      gap: 20px;
+    }
+  }
+}

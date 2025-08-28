@@ -1,0 +1,17 @@
+.why-is-this-important {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__flex {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  &__item {
+    min-width: 370px;
+    height: 300px;
+  }
+}

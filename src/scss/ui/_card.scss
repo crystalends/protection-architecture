@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  padding: 20px;
+
+  &__absolute-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.8);
+  }
+
+  &--light-gray {
+    @include bg-color('light-gray');
+  }
+
+  &--dob-gray {
+    @include bg-color('dob-gray');
+  }
+
+  &--very-dark-gray {
+    @include bg-color('very-dark-gray');
+  }
+
+  &--dark-green {
+    @include bg-color('dark-green');
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

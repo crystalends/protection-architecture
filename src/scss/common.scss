@@ -1,0 +1,196 @@
+@import "utils/colors";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @include bg-color('white');
+  @include text-color('very-dark-gray');
+}
+
+button,
+input,
+select,
+textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+.text-small {
+  font-size: 16px;
+}
+
+.text-input {
+  font-size: 14px;
+}
+
+.text-dark-gray {
+  @include text-color('dark-gray');
+}
+
+.text-white {
+  @include text-color('white');
+}
+
+.text-gray {
+  @include text-color('gray');
+}
+
+.adaptive-width {
+  width: fit-content;
+
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 9px;
+      height: 9px;
+      @include bg-color('green');
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  *, *::before, *::after {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  .text-big {
+    font-size: 21px;
+  }
+  .text-small {
+    font-size: 14px;
+  }
+  .text-input {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 720px) {
+  *, *::before, *::after {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+  .text-big {
+    font-size: 18px;
+  }
+  .text-small {
+    font-size: 12px;
+  }
+  .text-input {
+    font-size: 11px;
+  }
+}

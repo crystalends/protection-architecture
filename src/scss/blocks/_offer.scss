@@ -1,0 +1,27 @@
+.offer {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 890px;
+
+    @media (max-width: 1400px) {
+      max-width: 100%;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}

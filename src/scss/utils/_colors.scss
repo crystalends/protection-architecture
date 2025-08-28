@@ -1,0 +1,43 @@
+$colors: (
+        'black': #2B2B2C,
+        'white': #fff,
+        'transparent-white': #FFFFFFB2,
+        'green': #0F7A5F,
+        'dark-green': #0C4032,
+        'light-gray': #F6F6F6,
+        'gray': #E9E9E9,
+        'dob-gray': #D9D7D7,
+        'dark-gray': #868484,
+        'very-dark-gray': #4B4848,
+);
+
+
+@mixin text-color($name) {
+  color: map-get($colors, $name) !important;
+}
+
+@mixin bg-color($name) {
+  background-color: map-get($colors, $name);
+}
+
+@mixin border-color($name) {
+  border-color: map-get($colors, $name);
+}
+
+@mixin placeholder-color($name) {
+  &::placeholder {
+    color: map-get($colors, $name);
+  }
+  &::-webkit-input-placeholder {
+    color: map-get($colors, $name);
+  }
+  &::-moz-placeholder {
+    color: map-get($colors, $name);
+  }
+  &:-ms-input-placeholder {
+    color: map-get($colors, $name);
+  }
+  &:-moz-placeholder {
+    color: map-get($colors, $name);
+  }
+}

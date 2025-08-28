@@ -1,0 +1,27 @@
+.about {
+  background: url("./../../public/f5455c29b5990ce444f2af48b32035c03f650ad2.png") no-repeat center;
+  background-size: cover;
+  height: 526px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 80px 0;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    text-transform: initial;
+  }
+
+  &__description-wrapper {
+    width: 100%;
+    max-width: 890px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

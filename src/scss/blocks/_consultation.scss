@@ -1,0 +1,44 @@
+.consultation {
+  display: flex;
+  @include bg-color('gray');
+  border-radius: 20px;
+  padding: 80px 40px;
+  gap: 40px;
+  justify-content: space-between;
+
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 720px) {
+    padding: 40px 30px;
+  }
+
+  &__content {
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 515px;
+
+    @media (max-width: 1250px) {
+      max-width: 100%;
+    }
+  }
+
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 590px;
+
+    @media (max-width: 1250px) {
+      max-width: 100%;
+    }
+  }
+}

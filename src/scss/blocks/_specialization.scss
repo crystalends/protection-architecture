@@ -1,0 +1,9 @@
+.specialization {
+  @include bg-color('white');
+  border-radius: 20px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

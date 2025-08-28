@@ -1,0 +1,65 @@
+.button {
+  padding: 20px 60px;
+  min-width: 205px;
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 20px;
+  @include text-color('white');
+  @include bg-color('green');
+
+  @media (max-width: 720px) {
+    padding: 20px 20px;
+    width: 100%;
+  }
+
+  &:hover {
+    @include bg-color('dark-green');
+  }
+
+  &--outline-very-dark-gray {
+    border: 1px solid;
+    @include border-color('very-dark-gray');
+    @include text-color('very-dark-gray');
+    background-color: transparent;
+
+    &:hover {
+      @include bg-color('light-gray');
+    }
+  }
+
+  &--outline-dark-green {
+    border: 1px solid;
+    @include border-color('dark-green');
+    @include text-color('dark-green');
+    background-color: transparent;
+
+    &:hover {
+      @include bg-color('dark-green');
+      @include text-color('white');
+    }
+  }
+
+  &--outline-white {
+    border: 1px solid;
+    @include border-color('white');
+    @include text-color('white');
+    background-color: transparent;
+
+    &:hover {
+      @include bg-color('white');
+      @include text-color('very-dark-gray');
+    }
+  }
+
+  &--large {
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+
+    @media (max-width: 720px) {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.input {
+  border-bottom: 1px solid;
+  padding: 9.5px 20px;
+  width: 100%;
+  @include border-color('dark-gray');
+  @include placeholder-color('dark-gray');
+  @include text-color('black');
+}

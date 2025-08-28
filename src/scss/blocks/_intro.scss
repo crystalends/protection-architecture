@@ -1,0 +1,159 @@
+.intro {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  overflow: hidden;
+  min-height: 800px;
+  background: url("./../../public/Rectangle 5.png") no-repeat center;
+  background-size: cover;
+
+  &--secondary {
+    min-height: 740px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__image {
+    position: absolute;
+    width: 608px;
+    height: 546px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    left: 34%;
+    bottom: 0;
+
+    @media (max-width: 1665px) {
+      display: none;
+    }
+
+    &-bg {
+      position: absolute;
+      @include bg-color('dark-green');
+      width: 500px;
+      height: 550px;
+      left: 34%;
+      bottom: 60px;
+
+      &--about {
+        width: 840px;
+        height: 555px;
+        left: 42.2%;
+      }
+
+      &--not-found {
+        width: 500px;
+        height: 550px;
+        left: 50.8%;
+      }
+
+      @media (max-width: 1665px) {
+        display: none;
+      }
+    }
+
+    &-stroke {
+      position: absolute;
+      left: 34%;
+      bottom: 60px;
+
+      &--about {
+        left: 42.2%;
+      }
+
+      &--not-found {
+        left: 50.7%;
+        bottom: 60px;
+      }
+
+      @media (max-width: 1665px) {
+        display: none;
+      }
+    }
+
+    &--about {
+      object-position: center;
+      left: 45%;
+      top: 14.4%;
+      width: 851px;
+      height: 555px;
+      transform: scale(1.1);
+      transform-origin: center;
+    }
+
+    &--not-found {
+      object-position: center;
+      left: 55.6%;
+      width: 518px;
+      height: 626px;
+    }
+  }
+
+  &__about {
+    max-width: 601px;
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+
+    @media (max-width: 1200px) {
+      min-height: 200px;
+    }
+  }
+
+  &__action {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    background-color: #104437;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+
+    &-image {
+      width: 100%;
+      max-width: 94px;
+      height: 83px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    &-slogan {
+      width: 100%;
+      max-width: 279px;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 475px;
+  }
+}

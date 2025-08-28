@@ -1,0 +1,10 @@
+.privacy-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 60.5px;
+
+  &__content {
+    width: 100%;
+    max-width: 1020px;
+  }
+}

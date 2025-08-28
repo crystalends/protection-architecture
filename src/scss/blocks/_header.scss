@@ -1,0 +1,39 @@
+.header {
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+
+  &--dark {
+
+  }
+
+  &__navigation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+
+    &--primary {
+      display: flex;
+
+      @media (max-width: 1425px) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    height: fit-content;
+  }
+
+  &__burger-button {
+    display: none;
+
+    @media (max-width: 1425px) {
+      display: initial;
+    }
+  }
+}

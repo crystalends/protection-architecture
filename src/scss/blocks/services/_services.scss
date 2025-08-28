@@ -1,0 +1,25 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  &__header {
+    width: 100%;
+    max-width: 890px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+}

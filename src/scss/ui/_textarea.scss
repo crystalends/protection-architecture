@@ -1,0 +1,11 @@
+.textarea {
+  border-bottom: 1px solid;
+  padding: 9.5px 20px;
+  width: 100%;
+  min-height: 57px;
+  resize: none;
+  overflow-y: auto;
+  @include border-color('dark-gray');
+  @include placeholder-color('dark-gray');
+  @include text-color('black');
+}

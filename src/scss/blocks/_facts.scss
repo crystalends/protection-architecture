@@ -1,0 +1,22 @@
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__flex {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    gap: 20px;
+  }
+
+  &__item {
+    min-width: 500px;
+    height: 550px;
+
+    &--small {
+      min-width: 370px;
+      height: 378px;
+    }
+  }
+}
