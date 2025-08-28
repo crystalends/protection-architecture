@@ -349,8 +349,11 @@ ul li:not(:last-child) {
 
 .header-wrapper {
   z-index: 50;
-  position: absolute;
-  top: 10px;
+  padding-bottom: 10px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(12, 64, 50, 0.6980392157);
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   display: flex;
@@ -477,27 +480,18 @@ ul li:not(:last-child) {
 .menu {
   z-index: 10;
   width: 100%;
-  margin-top: 10px;
-  display: flex;
+  margin-top: 20px;
   border-radius: 20px;
-  position: absolute;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 130px);
   height: fit-content;
   overflow-y: auto;
-  padding: 10px;
-  backdrop-filter: blur(20px);
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(0.98);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: none;
 }
-.menu.active {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
+.menu--active {
+  display: flex;
 }
 .menu__navigation {
   background-color: rgba(255, 255, 255, 0.6980392157);
@@ -581,6 +575,9 @@ ul li:not(:last-child) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.not-found__code {
+  font-size: 296px;
 }
 .not-found__content {
   display: flex;

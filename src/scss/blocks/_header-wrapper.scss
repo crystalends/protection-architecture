@@ -1,7 +1,10 @@
 .header-wrapper {
   z-index: 50;
-  position: absolute;
-  top: 10px;
+  padding-bottom: 10px;
+  backdrop-filter: blur(20px);
+  @include bg-color('transparent-dark-green');
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
   display: flex;
