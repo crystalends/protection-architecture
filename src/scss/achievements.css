@@ -349,7 +349,7 @@ ul li:not(:last-child) {
 
 .header-wrapper {
   z-index: 50;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   backdrop-filter: blur(20px);
   background-color: rgba(12, 64, 50, 0.6980392157);
   position: fixed;
@@ -396,6 +396,11 @@ ul li:not(:last-child) {
 .header__link {
   font-size: 16px;
   height: fit-content;
+}
+@media (max-width: 460px) {
+  .header__contact {
+    display: none;
+  }
 }
 .header__burger-button {
   display: none;
@@ -525,7 +530,7 @@ ul li:not(:last-child) {
 .menu {
   z-index: 10;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 20px;
   border-radius: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -726,7 +731,7 @@ ul li:not(:last-child) {
 .header-sticky-wrapper {
   position: sticky;
   top: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.6980392157);
   z-index: 50;

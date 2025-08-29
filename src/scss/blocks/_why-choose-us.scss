@@ -12,6 +12,14 @@
     @media (max-width: 720px) {
       gap: 20px 120px;
     }
+
+    & > *:first-child {
+      min-width: 419px;
+
+      @media (max-width: 480px) {
+        min-width: fit-content;
+      }
+    }
   }
 
   @media (max-width: 720px) {
@@ -30,14 +38,6 @@
 
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
-  }
-
-  &__title {
-    white-space: nowrap;
-
-    @media (max-width: 720px) {
-      white-space: initial;
-    }
   }
 
   &__item {

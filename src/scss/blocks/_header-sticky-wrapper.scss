@@ -1,7 +1,7 @@
 .header-sticky-wrapper {
   position: sticky;
   top: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   backdrop-filter: blur(20px);
   @include bg-color('transparent-white');
   z-index: 50;

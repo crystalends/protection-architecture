@@ -5,10 +5,6 @@
   justify-content: space-between;
   padding-top: 10px;
 
-  &--dark {
-
-  }
-
   &__navigation {
     display: flex;
     flex-wrap: wrap;
@@ -27,6 +23,12 @@
   &__link {
     font-size: 16px;
     height: fit-content;
+  }
+
+  &__contact {
+    @media (max-width: 460px) {
+      display: none;
+    }
   }
 
   &__burger-button {
