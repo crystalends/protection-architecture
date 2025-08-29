@@ -744,6 +744,11 @@ ul li:not(:last-child) {
     gap: 20px 120px;
   }
 }
+@media (max-width: 480px) {
+  .why-choose-us__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .why-choose-us__grid > *:first-child {
   min-width: 419px;
 }

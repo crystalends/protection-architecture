@@ -13,6 +13,10 @@
       gap: 20px 120px;
     }
 
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+
     & > *:first-child {
       min-width: 419px;
 
